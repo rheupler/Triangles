@@ -5,11 +5,16 @@ class Triangles
     @side3 = side3
   end
 
-  def equilateral?
+  def kind?
     if @side1 == @side2 && @side2 == @side3 && @side3 == @side1
-      true
+      'equilateral'
+    elsif @side1 ==@side2 && @side1 !=@side3 ||
+          @side2 ==@side3 && @side2 !=@side1 ||
+          @side3 ==@side1 && @side3 !=@side2
+      'isosceles'
     else
       false
     end
   end
+
 end

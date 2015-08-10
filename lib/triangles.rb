@@ -19,5 +19,4 @@ class Triangles
       'Not a triangle, bro.'
     end
   end
-
 end

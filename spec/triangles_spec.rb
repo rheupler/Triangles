@@ -16,5 +16,14 @@ describe(Triangles) do
      new_isosceles = Triangles.new(1, 3, 3)
      expect(new_isosceles.kind?()).to(eq('isosceles'))
    end
- end
+  end
+end
+
+describe(Triangles) do
+  describe('#kind?') do
+    it('returns scalene if no sides are equal') do
+      new_scalene = Triangles.new(1, 2, 3)
+      expect(new_scalene.kind?()).to(eq('scalene'))
+    end
+  end
 end
